@@ -217,18 +217,18 @@ similarDF, idSimilar = distance(allItemsDF, newItemsDF, 100)
 
 # Sentence similarity
 
-def sentence_similarity(newItems, similarDF, train_model, tensor_emb, n):
+def sentence_similarity(newItemsDF, similarDF, train_model, tensor_emb, n):
     
     """
     Calcular la similitud entre dos frases/parrafos
     usando el modelo pre-entrenado 
     Parametros: 
-        - newItems: DF que contiene las frases
+        - newItemsDF: DF que contiene las frases
         - similarDF: DF de elementos cercanos determinado por 
         medio de la medida de distancias
         - train_model: modelo 
         - tensor_emb: tensor de caracteristicas de cada
-        elemento de texto del DF newItems
+        elemento de texto del DF newItemsDF
         - n: cantidad de elementos semenjantes a encontrar
     Return:
         - similarDFtop: Descripcion de elmentos similares
@@ -271,7 +271,7 @@ def sentence_similarity(newItems, similarDF, train_model, tensor_emb, n):
     return similarDFtop, idSimilarTop
 
 similarDFtop, idSimilarTop = sentence_similarity(
-    newItems, similarDF, 'sentence_similarity_spanish_es', 
+    newItemsDF, similarDF, 'sentence_similarity_spanish_es', 
     'tensor_embeddingsAll.pt', 5)
 
 # guardar resultado en excel
