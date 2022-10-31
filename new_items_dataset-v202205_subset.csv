@@ -1,0 +1,2 @@
+id,title,date_created,base_price,price,category_id,tags,seller_id,seller_country,seller_province,seller_city,seller_loyalty,buying_mode,shipping_mode,shipping_admits_pickup,shipping_is_free,status,sub_status,warranty,is_new,initial_quantity,sold_quantity,available_quantity
+MLA584317976,Plataforma Escalera Multifuncion Aluminio,2015-10-13T01:35:54.000Z,550,550,MLA1901,['dragged_bids_and_visits'],129390255,Argentina,Buenos Aires,Vicente López,bronze,buy_it_now,not_specified,True,False,active,,,1,1,0,1
